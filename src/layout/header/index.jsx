@@ -10,7 +10,7 @@ import "./index.css";
 
 const Header = () => {
   const admin = useSelector((state) => state.admin);
-  const isLoggedin = () => Boolean(admin);
+  const isLoggedin = Boolean(admin);
   const theme = useSelector((state) => state.settings.theme);
 
   return (

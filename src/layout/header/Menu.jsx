@@ -9,7 +9,6 @@ import useCloseWidget from "hooks/useCloseWidget";
 
 import { ReactComponent as DropDownIcon } from "assets/icons/drop-down.svg";
 import { ReactComponent as LogoutIcon } from "assets/icons/logout.svg";
-import { ReactComponent as SettingsIcon } from "assets/icons/settings.svg";
 
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -30,10 +29,6 @@ const Menu = () => {
       {showMenu && (
         <div className="menu bg-300 cursor-pointer absolute top-0 right-0 rounded-xl w-max">
           <ul className="flex flex-col rounded-xl transition">
-            <li className="flex gap-2 p-2 bg-hovered w-full">
-              <SettingsIcon className="inline mr-2 w-4" />
-              Settings
-            </li>
             <li
               onClick={() => dispatch(toggleTheme())}
               className="flex gap-2 p-2 bg-hovered w-full"
